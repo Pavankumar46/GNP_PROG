@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[n],i,j,r;
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    for(i=0;i<n;i++)
+    {
+        if(a[i]>=38)
+        {
+            r=a[i];
+            for(j=1;j<3;j++)
+            {
+                if((r+j)%5==0)
+                a[i]=r+j;
+            }
+        }
+        else
+        continue;
+    }
+for(i=0;i<n;i++)
+printf("%d\n",a[i]);
+}

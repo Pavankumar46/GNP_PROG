@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    long int a[5],small,big,s,l=0,b[5];int i,j;
+for(i=0;i<5;i++)
+scanf("%ld",&a[i]);
+for(i=0;i<5;i++)
+{s=0;
+    for(j=0;j<5;j++)
+    {
+        if(i!=j)
+        s+=a[j];    
+    }
+b[l++]=s;
+}
+small=b[0];
+big=b[0];
+for(i=0;i<5;i++)
+{
+    if(small>b[i])
+    small=b[i];
+    if(big<b[i])
+    big=b[i];
+}
+printf("%ld %ld",small,big);
+}
