@@ -1,5 +1,4 @@
-no. of times char is found
-/*#include<stdio.h>
+#include<stdio.h>
 int times(const char *,char);
 main()
 {
